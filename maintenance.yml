@@ -1,0 +1,13 @@
+name: Maintenance
+version: 1.0.0
+description: "Plugin adds a splash page to your site that lets visitors know your site is down for maintenance."
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-plugin-maintenance
+bugs: https://github.com/morfy-cms/morfy-plugin-maintenance/issues
+license: MIT
+
+# Plugin settings
+enabled: false
