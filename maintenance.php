@@ -10,7 +10,7 @@
  */
 
 if (Morfy::$plugins['maintenance']['enabled']) {
-    Morfy::factory()->addAction('before_render', function () {
+    Morfy::addAction('before_render', function () {
 
         Morfy::$site[theme] = 'maintenance';
 
