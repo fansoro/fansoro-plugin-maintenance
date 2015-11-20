@@ -9,25 +9,17 @@
  * file that was distributed with this source code.
  */
 
-if (Morfy::$plugins['maintenance']['enabled']) {
-    Morfy::addAction('before_render', function () {
+if (Config::get('plugins.maintenance.enabled')) {
+    Action::add('before_page_rendered', function () {
 
-        Morfy::$site[theme] = 'maintenance';
+        Config::set('system.theme', 'maintenance');
 
-        $fenom = Fenom::factory(
-            THEMES_PATH . '/maintenance/',
-            CACHE_PATH . '/fenom/',
-            Morfy::$fenom
-        );
-
-        // Do global tag {$.site} for the template
-        $fenom->addAccessorSmart('site', 'site_config', Fenom::ACCESSOR_PROPERTY);
-        $fenom->site_config = static::$site;
+        $template = Template::factory(THEMES_PATH . '/maintenance/');
 
         Response::status(503);
         Request::setHeaders('Status: 503 Service Temporarily Unavailable');
         Request::setHeaders('Retry-After: 3600');
-        $fenom->display('maintenance.tpl');
+        $template->display('maintenance.tpl');
         Request::shutdown();
 
     });

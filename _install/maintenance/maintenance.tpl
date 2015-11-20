@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta content="{$.site.description}" name="description">
-    <link href="{$.site.url}/themes/{$.site.theme}/favicon.ico" rel="icon">
-    <title>{$.site.title}</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="{$.config.site.description}" name="description">
+    <link href="{Url::getBase()}/themes/{$.config.system.theme}/favicon.ico" rel="icon">
+    <title>{$.config.site.title}</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{$.site.url}/themes/{$.site.theme}/assets/css/maintenance.css" rel="stylesheet">
+    <link href="{Url::getBase()}/themes/{$.config.system.theme}/assets/css/maintenance.css" rel="stylesheet">
 </head>
 <body>
     <div class="maintenance-wrapper">
