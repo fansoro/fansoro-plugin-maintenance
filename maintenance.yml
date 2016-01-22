@@ -1,12 +1,12 @@
 name: Maintenance
-version: 2.0.0
+version: 3.0.0
 description: "Plugin adds a splash page to your site that lets visitors know your site is down for maintenance."
 author:
   name: Sergey Romanenko
   email: awilum@msn.com
-  url: http://morfy.org
-homepage: https://github.com/morfy-cms/morfy-plugin-maintenance
-bugs: https://github.com/morfy-cms/morfy-plugin-maintenance/issues
+  url: http://fansoro.org
+homepage: https://github.com/fansoro/fansoro-plugin-maintenance
+bugs: https://github.com/fansoro/fansoro-plugin-maintenance/issues
 license: MIT
 
 # Plugin settings

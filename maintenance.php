@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Maintenance Plugin
+ * Fansoro Maintenance Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *
